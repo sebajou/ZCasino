@@ -6,10 +6,10 @@ import math
 
 # Saisie des conditions initiales
 try:
-    somme=input("saisissez votre somme initial :")
+    somme=input("Saisissez votre somme initial :")
     somme=int(somme)
 except:
-    somme=input("vous n'avez pas saisi un nombre adéquate, saisissez votre somme initial :")
+    somme=input("Vous n'avez pas saisi un nombre adéquate, saisissez votre somme initial :")
     somme=int(somme)
 
 
@@ -20,17 +20,17 @@ while somme!=0:
     numero_mise=0
     while numero_mise <= 0 or numero_mise > 49:
         try: 
-            numero_mise=input("saisissez le numéro sur lequel vous misez entre 0 et 49: ")
+            numero_mise=input("Saisissez le numéro sur lequel vous misez entre 0 et 49: ")
             numero_mise=int(numero_mise)
         except:
-            numero_mise=input("vous n'avez pas saisi un nombre adéquate, saisissez le numéro sur lequel vous misez entre 0 et 49: ")
+            numero_mise=input("Vous n'avez pas saisi un nombre adéquate, saisissez le numéro sur lequel vous misez entre 0 et 49: ")
             numero_mise=int(numero_mise)
 
     try:
-        montant_mise=input("saisissez le montan de votre mise :")
+        montant_mise=input("Saisissez le montan de votre mise :")
         montant_mise=int(montant_mise)
     except:    
-        montant_mise=input("vous n'avez pas saisi un nombre adéquate, saisissez le montan de votre mise :")
+        montant_mise=input("Vous n'avez pas saisi un nombre adéquate, saisissez le montan de votre mise :")
         montant_mise=int(montant_mise)
 
     while montant_mise>somme:
@@ -51,7 +51,7 @@ while somme!=0:
     somme=somme+gain
 
     # message des résultats
-    message1="vous avez tirer le numéro : "
+    message1="Vous avez tirer le numéro : "
     message2=", votre somme total est de "
     print(message1 + str(tirage) + message2 + str(somme))
 
