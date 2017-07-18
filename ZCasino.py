@@ -16,7 +16,7 @@ except:
 # boucle sur le calcul et la saisie des mises
 while somme!=0: 
  
-    # saisie des mise
+    # saisie du numero parie
     numero_mise=0
     while numero_mise <= 0 or numero_mise > 49:
         try: 
@@ -25,7 +25,7 @@ while somme!=0:
         except:
             numero_mise=input("Vous n'avez pas saisi un nombre adéquate, saisissez le numéro sur lequel vous misez entre 0 et 49: ")
             numero_mise=int(numero_mise)
-
+    # saisie des mises
     try:
         montant_mise=input("Saisissez le montan de votre mise :")
         montant_mise=int(montant_mise)
