@@ -55,7 +55,7 @@ while somme!=0:
     message2=", votre somme total est de "
     print(message1 + str(tirage) + message2 + str(somme))
 
-print("vous avez perdu tout votre argent, vous ferriez mieux de ne pas jouer au casino")
+print("Vous avez perdu tout votre argent ! Vous ferriez mieux de ne pas jouer au casino !")
 
 input("Appuyez sur ENTREE pour fermer ce programme...")
 
