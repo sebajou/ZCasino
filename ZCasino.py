@@ -4,6 +4,7 @@
 import random
 import math
 
+# Saisie des conditions initiales
 try:
     somme=input("saisissez votre somme initial :")
     somme=int(somme)
